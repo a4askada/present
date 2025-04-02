@@ -6,6 +6,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Menu} from "./headerMenu/Menu";
 import {DesktopMenu} from "./headerMenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
+import {Button} from "../../components/Button";
 
 const itemsMenu = ["Главная", "О нас", "Наши сервисы", "Блог"];
 
@@ -27,14 +28,20 @@ export const Header = () => {
 		<StyledHeader>
 			<Container>
 				<FlexWrapper justify="space-between" align="center">
-					<Logo />
+					{width > breakpoint ? <Logo /> : null}
 					{width < breakpoint ? <MobileMenu menuItems={itemsMenu} /> : <DesktopMenu menuItems={itemsMenu} />}
-
-					<button>Найти подарок</button>
+					{width > breakpoint ? <Button>Кнопка</Button> : null}
 				</FlexWrapper>
 			</Container>
 		</StyledHeader>
 	);
 };
 
-const StyledHeader = styled.header``;
+const StyledHeader = styled.header`
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #77608d;
+	z-index: 99999999;
+`;

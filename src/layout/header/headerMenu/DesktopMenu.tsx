@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {Menu} from "./Menu";
+import {Logo} from "../../../components/logo/Logo";
 
 export const DesktopMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
 	return (
