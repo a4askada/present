@@ -3,10 +3,10 @@ import {Logo} from "../../components/logo/Logo";
 import styled from "styled-components";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {Menu} from "./headerMenu/Menu";
 import {DesktopMenu} from "./headerMenu/DesktopMenu";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {Button} from "../../components/Button";
+import {theme} from "../../styles/Theme";
 
 const itemsMenu = ["Главная", "О нас", "Наши сервисы", "Блог"];
 
@@ -28,9 +28,9 @@ export const Header = () => {
 		<StyledHeader>
 			<Container>
 				<FlexWrapper justify="space-between" align="center">
-					{width > breakpoint ? <Logo /> : null}
+					<Logo />
 					{width < breakpoint ? <MobileMenu menuItems={itemsMenu} /> : <DesktopMenu menuItems={itemsMenu} />}
-					{width > breakpoint ? <Button>Кнопка</Button> : null}
+					{width > breakpoint ? <Button>Поиск подарков</Button> : null}
 				</FlexWrapper>
 			</Container>
 		</StyledHeader>
@@ -42,6 +42,17 @@ const StyledHeader = styled.header`
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: #77608d;
+	background-color: ${theme.colors.headerBg};
 	z-index: 99999999;
+
+	padding: 40px 0;
+	${Button} {
+		width: 222px;
+		height: 43px;
+
+		&:hover {
+			background-color: ${theme.colors.accent};
+			color: #fff;
+		}
+	}
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {font} from "../../../styles/Common";
 
 export const Menu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
 	return (
@@ -17,11 +18,8 @@ export const Menu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Ar
 
 const MenuItem = styled.li``;
 const MenuLink = styled.a`
-	color: #000;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: normal;
+	${font({Fmax: 18, Fmin: 18})}
 
 	&:hover {
 		opacity: 0.5;

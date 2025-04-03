@@ -3,6 +3,7 @@ import {Menu} from "../Menu";
 import styled, {css} from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {Logo} from "../../../../components/logo/Logo";
+import {Button} from "../../../../components/Button";
 
 export const MobileMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
 	const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -24,7 +25,7 @@ export const MobileMenu: React.FC<{menuItems: Array<string>}> = (props: {menuIte
 				}}
 			>
 				<Menu menuItems={props.menuItems} />
-				<button>Найти подарок</button>
+				<Button>Поиск подарка</Button>
 			</MobilePopup>
 		</StyledMobileMenu>
 	);
@@ -34,12 +35,12 @@ const StyledMobileMenu = styled.nav``;
 
 const MobilePopup = styled.div<{isOpen: boolean}>`
 	position: fixed;
-	background-color: rgba(118, 4, 248, 0.486);
+	background-color: ${theme.colors.headerBg};
 	top: 0;
 	right: 0;
-	bottom: 30%;
+	bottom: 0;
 	left: 0;
-	z-index: 99999999999;
+	z-index: 8;
 
 	display: none;
 
@@ -50,6 +51,7 @@ const MobilePopup = styled.div<{isOpen: boolean}>`
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			gap: 150px;
 		`}
 
 	ul {
@@ -67,7 +69,7 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 	height: 200px;
 	top: -100px;
 	right: -100px;
-	z-index: 888888888;
+	z-index: 9999999999999999999;
 	span {
 		display: block;
 		width: 36px;
@@ -92,11 +94,11 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 			background-color: ${theme.colors.font};
 			position: absolute;
 			transform: translateY(-10px);
-			transition: all 3s ease-out;
+			transition: all 0.5s;
 			${(props) =>
 				props.isOpen &&
 				css<{isOpen: boolean}>`
-					transform: rotate(404deg);
+					transform: translateY(0) rotate(405deg);
 				`};
 		}
 		&::after {
@@ -108,12 +110,12 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 			background-color: ${theme.colors.font};
 			position: absolute;
 			transform: translateY(10px);
-			transition: all 3s ease-out;
+			transition: all 0.5s;
 
 			${(props) =>
 				props.isOpen &&
 				css<{isOpen: boolean}>`
-					transform: rotate(-765deg);
+					transform: translateY(0) rotate(-405deg);
 				`}
 		}
 	}
