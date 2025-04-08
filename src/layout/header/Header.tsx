@@ -45,10 +45,14 @@ const StyledHeader = styled.header`
 	background-color: ${theme.colors.headerBg};
 	z-index: 99999999;
 
+	opacity: 0.4;
+
 	padding: 40px 0;
 	${Button} {
 		width: 222px;
 		height: 43px;
+
+		transition: all 0.2s;
 
 		&:hover {
 			background-color: ${theme.colors.accent};
