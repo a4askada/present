@@ -7,6 +7,7 @@ import {Button} from "../../../../components/Button";
 
 export const MobileMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
 	const [menuIsOpen, setMenuIsOpen] = useState(false);
+	// document.body.style.overflow === "hidden";
 
 	const onBurgerBtnCLick = () => {
 		setMenuIsOpen(!menuIsOpen);

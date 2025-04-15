@@ -36,9 +36,9 @@ const StyledGift = styled.section`
 	padding-top: 125px;
 
 	${FlexWrapper} {
-		background-color: #77608d;
 		@media ${theme.media.tablet} {
 			flex-wrap: wrap;
+			gap: 20px;
 		}
 	}
 `;
@@ -46,9 +46,8 @@ const StyledGift = styled.section`
 const GiftWrapper = styled.div`
 	width: 100%;
 
-	background-color: #776033;
-
 	${Button} {
+		display: block;
 		color: ${theme.colors.secondaryBg};
 		background-color: ${theme.colors.accent};
 
@@ -57,6 +56,11 @@ const GiftWrapper = styled.div`
 		&:hover {
 			background-color: ${theme.colors.accentHover};
 			border: 1px solid ${theme.colors.accentHover};
+		}
+
+		@media ${theme.media.tablet} {
+			width: 80%;
+			margin: 0 auto;
 		}
 	}
 `;
@@ -67,8 +71,6 @@ const GiftImgBox = styled.div`
 	max-width: 732px;
 	width: 100%;
 	min-height: 700px;
-
-	background-color: red;
 
 	@media (max-width: 1170px) {
 		min-height: 500px;
@@ -83,8 +85,6 @@ const GiftImgWrap = styled.div`
 	left: 0;
 	right: -133px;
 	bottom: 0;
-
-	background-color: green;
 
 	@media (max-width: 1168px) {
 		right: 0;
