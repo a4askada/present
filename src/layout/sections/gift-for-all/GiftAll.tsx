@@ -32,6 +32,46 @@ const cardsData = [
 		cardTitle: "Рождество",
 		cardAlt: "Рождество",
 	},
+	{
+		cardImg: cardImg1,
+		cardTitle: "День Рождения",
+		cardAlt: "День Рождения",
+	},
+	{
+		cardImg: cardImg2,
+		cardTitle: "Юбилей",
+		cardAlt: "Юбилей",
+	},
+	{
+		cardImg: cardImg3,
+		cardTitle: "День Св.Валентна",
+		cardAlt: "День Св.Валентна",
+	},
+	{
+		cardImg: cardImg4,
+		cardTitle: "Рождество",
+		cardAlt: "Рождество",
+	},
+	{
+		cardImg: cardImg1,
+		cardTitle: "День Рождения",
+		cardAlt: "День Рождения",
+	},
+	{
+		cardImg: cardImg2,
+		cardTitle: "Юбилей",
+		cardAlt: "Юбилей",
+	},
+	{
+		cardImg: cardImg3,
+		cardTitle: "День Св.Валентна",
+		cardAlt: "День Св.Валентна",
+	},
+	{
+		cardImg: cardImg4,
+		cardTitle: "Рождество",
+		cardAlt: "Рождество",
+	},
 ];
 
 export const GiftAll = () => {
