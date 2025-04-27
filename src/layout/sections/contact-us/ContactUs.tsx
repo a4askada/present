@@ -74,6 +74,12 @@ const ContactButtonsBox = styled.div`
 		background-color: ${theme.colors.font};
 		color: ${theme.colors.secondaryBg};
 
+		&:hover {
+			background-color: transparent;
+			color: ${theme.colors.font};
+			border: 1px solid ${theme.colors.font};
+		}
+
 		@media ${theme.media.tablet} {
 			width: 100%;
 		}
@@ -82,6 +88,11 @@ const ContactButtonsBox = styled.div`
 			background-color: transparent;
 			color: ${theme.colors.font};
 			border: 1px solid ${theme.colors.font};
+
+			&:hover {
+				background-color: ${theme.colors.font};
+				color: ${theme.colors.secondaryBg};
+			}
 		}
 	}
 `;

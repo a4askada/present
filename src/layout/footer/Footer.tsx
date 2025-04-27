@@ -81,9 +81,14 @@ const FooterMenuItem = styled.li`
 	font-size: 14px;
 
 	line-height: 140.625%; /* 19.688px */
+	&:hover {
+		opacity: 0.8;
+		cursor: pointer;
+	}
 	a {
 		margin: 0 83px;
 		color: ${theme.colors.accent};
+
 		@media ${theme.media.tablet} {
 			margin: 0;
 		}
