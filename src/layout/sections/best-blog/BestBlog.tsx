@@ -18,6 +18,46 @@ const cardsData = [
 		title: "Как ИИ читает ваши мысли, чтобы найти лучший подарок",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
 	},
+	{
+		title: "База данных для поиска подарков для девушки",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "Как ИИ читает ваши мысли, чтобы найти лучший подарок",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "База данных для поиска подарков для девушки",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "Как ИИ читает ваши мысли, чтобы найти лучший подарок",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "База данных для поиска подарков для девушки",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "Как ИИ читает ваши мысли, чтобы найти лучший подарок",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "База данных для поиска подарков для девушки",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "Как ИИ читает ваши мысли, чтобы найти лучший подарок",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "База данных для поиска подарков для девушки",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
+	{
+		title: "Как ИИ читает ваши мысли, чтобы найти лучший подарок",
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...",
+	},
 ];
 
 export const BestBlog = () => {
@@ -138,6 +178,7 @@ const BestBlogReadMore = styled.a`
 const CardsWrapper = styled.div`
 	display: flex;
 	gap: 30px;
+	flex-wrap: wrap;
 
 	@media ${theme.media.tablet} {
 		flex-wrap: wrap;

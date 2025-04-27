@@ -19,6 +19,7 @@ export const BestCard = (props: BestCardPropsType) => {
 };
 
 const StyledBestCard = styled.div`
+	width: 48%;
 	padding: 48px;
 	&:hover {
 		box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.05);
@@ -26,6 +27,7 @@ const StyledBestCard = styled.div`
 
 	@media ${theme.media.tablet} {
 		padding: 30px;
+		width: 100%;
 	}
 `;
 const BestCardTitle = styled.h4`
